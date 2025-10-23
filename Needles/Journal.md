@@ -1,3 +1,34 @@
+<h2>October 23rd 2025 - IT WORKS??</h2>
+A friend* came over and let me put needles in their arm this morning. It was the first time I've ever done it and I was really scared (more scared than they were, since they've done this plenty of times before) and I kinda messed it up and made it hurt more than it needed to but I did it!!! (sorry friend.)<br>
+
+<br>Friend was extremely patient and had many good ideas. We talked for a while about sanitation - obviously having needles touching wires that have been all over the place is NOT sanitary, and I'm not trying to give them an infection. My idea was that wires would only be connected to the part of the needle that doesn't go through the end (the part with the cap) so the needle part that passes through the body doesn't "touch" the wires, but the wires are still kind of bumping up against the insesrtion point, so we opted for... a less sanitary approach, which some kink people would definitely chew me out about. Wiping the wires down with alcohol before touching them to the needle (maybe should get a spray bottle for this?) and then wiping/spinning the needle with a swab with alcohol on it before withdrawing it from the skin was the solution. 
+
+My original theory was that the circuit would only work if needles were on the same side of the wire, which did indeed work!!!! But at one point friend suggested I attatch it to the other side of the wire - which ALSO WORKED! So current is being conducted THROUGH human skin (which I thought would be too resistant) and 3.3V is not enough to burn or cause discomfort. Certainly wires connected on each end is the hottest/prettiest way for it to look... and also more bondage-y looking. Literally wired into the computer. Very cyborg, very cool. Some good Testuo the Iron Man inspo happening here. 
+
+Trying to get needle images to load in this journal but I am unsure why files aren't loading properly in GitHub so maybe come back to that one.
+
+As suspected, capacitive sensor... didn't work. Or rather it did, but extremely weirdly? I was expecting it to fully not recieve any information and for the LED to remain either off or on entirely without changing... But instead it sort of flickered on and off unpredictably? We tried testing it with movement, with outside touch, staying still, etc, and there wasn't any sort of real predictive pattern to the thing... Which is very odd. But I learned this with my past plant synth project - working with bioelectric systems is actually wildly unpredictable because biological things do not function like computers at all! So... maybe this stays as a chaos element? 
+
+Tilt sensor worked perfectly! I was wondering if needle being jostled in the skin would be too painful but either friend is an insane masochist (possible) or skin is an insane organ (seems likely) - he was showing me how you could turn the whole needle basically 90 degrees before it even started to become uncomfortable. So the little movements from the wire attatched to the needle weren't particularly noticable for him.
+
+Something fun though - HE wanted to do more of the controlling of the sensors? I had the wires intentionally long so I would be able to connect without causing harm and explore - but he wanted to move his arm around and cause the sensor to activate. 
+
+Which brought up some fun ideas for future collaboration, since friend is down to keep working with me on this!! I was originally evisioning something that I move around/manipulate/twist/cause pain for someone else, and they immediately jumped to wanting to move around or figuring out how to navigate in ways such that would avoid triggering sensors (like a typical sort of predicament scenario)... 
+
+So:
+Does this become a game with win/lose states? Not super thrilled about that... 
+Want it to be collaborative between top and bottom!! We both want to play with the circuit and have agency over it :) (Maybe that's something I need to give up though? Should I be adding things to the circuit during play or is it a set it up and let it go situation?) 
+Friend's suggestion - multiple triggers need to be activated at the samae time in order to achieve "success" (LED going on? or perhaps off?) "What if one edge of the connection is weaker/not activated, and you have to move in order to make the connection?"
+Is the circuit something to "solve"? Idk if I like that either... 
+
+<h3>Future concerns: </h3>
+What am I actually doing this for/what am I trying to say? I kinda didn't expect this to actually work, now what?? 
+If new components need more power, will voltage be too uncomfortable to withstand??
+How to connect raspberry pi and power source to human body so rest of circuit halo is wearable?
+Rethink wired connection. Currently using a very thick hard to manipulate wire, is that the best option? I want something sturdy to support different sensors/components... 
+
+<br>*They want to remain annoymous and will be referred to only as friend :) 
+
 <h2>October 20th 2025 - Progression and Failure</h2>
 Okay, spent a bit programming and testing a tilt switch. Pretty simple, pull down schematic, when sensor is flat nothing happens, when it is moved (kinda far - at least 90 degrees it seems) it prints to the console and a LED lights up. 
 
