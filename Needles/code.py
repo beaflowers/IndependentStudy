@@ -83,7 +83,7 @@ def tilt_sense():
 
 while True:
     touched()
-    #tilt()
-    tilt_sense()
+    tilt()
+    #tilt_sense()
     ledOn()
     time.sleep(0.5)
