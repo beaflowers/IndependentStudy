@@ -5,7 +5,7 @@ A friend* came over and let me put needles in their arm this morning. It was the
 
 My original theory was that the circuit would only work if needles were on the same side of the wire, which did indeed work!!!! But at one point friend suggested I attatch it to the other side of the wire - which ALSO WORKED! So current is being conducted THROUGH human skin (which I thought would be too resistant) and 3.3V is not enough to burn or cause discomfort. Certainly wires connected on each end is the hottest/prettiest way for it to look... and also more bondage-y looking. Literally wired into the computer. Very cyborg, very cool. Some good Testuo the Iron Man inspo happening here. 
 
-Trying to get needle images to load in this journal but I am unsure why files aren't loading properly in GitHub so maybe come back to that one.
+[i can't get images to load in here no matter what i do for some reason?]
 
 As suspected, capacitive sensor... didn't work. Or rather it did, but extremely weirdly? I was expecting it to fully not recieve any information and for the LED to remain either off or on entirely without changing... But instead it sort of flickered on and off unpredictably? We tried testing it with movement, with outside touch, staying still, etc, and there wasn't any sort of real predictive pattern to the thing... Which is very odd. But I learned this with my past plant synth project - working with bioelectric systems is actually wildly unpredictable because biological things do not function like computers at all! So... maybe this stays as a chaos element? 
 
