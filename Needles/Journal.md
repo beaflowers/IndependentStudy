@@ -1,3 +1,25 @@
+<h2>November 5th 2025 - Fashion </h2>
+after weeks of trying to figure out how to get a dress form, a halloween miracle occured and one just SHOWED UP AT MY HOUSE. shoutout to T for bringing it as a decoration and letting me keep it for a while.
+
+
+<br>working on the fashion-y non tech part… def leaning into sci fi aesthetic (which i was doing unconsciously, and R pointed out consciously). surprisingly difficult to get wires to look like what i want with only a loop around a needle as a support? this took TWO HOURS - mostly focused on the one floating above the shoulder. wondering how different the wires will sit in skin? needles def sliding out of this cloth very very easily, i added bits of eraser on the end, i don’t think that will be nearly as much of an issue, if it’s an issue at all, in skin. also want to add one on arms but mannequin has no arms. like maybe one directly going from back to forearm. sort of angelic cyborg bondage.
+
+![front of mannequin](documentation/Fashion_Nov5.jpg) <img src="documentation/Fashion_Back_Nov5.jpg" height="600">
+
+![closeup](documentation/Fashion_Closeup_Nov5.jpg)
+
+a nice accident: i think it’ll look good attached to pi in the front or back so that’s nice that that’ll be flexible. 
+
+tilt sensor is great but very much wondering what other sensors are out there, i simply don’t know? they have to be simple on/off switches since managing more than two in/out wires on a needle is logistically awful. 
+
+skill issues: i’m not super great at getting needles in skin with the accuracy i want, which has negative effects on how much exposed needle there is to connect to. i…. think i actually have a list of people willing to sit there while i practice tho, god bless the freaks. 
+
+oh, and still sort of figuring out the best way to bend the wire so it hooks properly onto the needle? it doesn’t seem to be too much of an issue since pressure of needle in skin seems to hold it in place/in contact w circuitry. it’s certainly not RELIABLE. but that’s bodies baby
+
+design issues: this currently has zero play element in it whatsoever. even if we add the tilt sensors in the circuit as it is now (which would be easy) it's not that.. interesting. what does controller have to DO in order to play? tilt, yes - or something like keep one on and on tilted - but wonder if forearm ones can be touched to complete a circuit. R will help me puzzle some of this out tomorrow. 
+
+shoutout to the gender advocacy center for having no questions asked free needles and sharps containers for distribution.
+
 <h2>October 23rd 2025 - IT WORKS??</h2>
 A friend* came over and let me put needles in their arm this morning. It was the first time I've ever done it and I was really scared (more scared than they were, since they've done this plenty of times before) and I kinda messed it up and made it hurt more than it needed to but I did it!!! (sorry friend.)<br>
 
@@ -5,11 +27,16 @@ A friend* came over and let me put needles in their arm this morning. It was the
 
 My original theory was that the circuit would only work if needles were on the same side of the wire, which did indeed work!!!! But at one point friend suggested I attatch it to the other side of the wire - which ALSO WORKED! So current is being conducted THROUGH human skin (which I thought would be too resistant) and 3.3V is not enough to burn or cause discomfort. Certainly wires connected on each end is the hottest/prettiest way for it to look... and also more bondage-y looking. Literally wired into the computer. Very cyborg, very cool. Some good Testuo the Iron Man inspo happening here. 
 
-[i can't get images to load in here no matter what i do for some reason?]
+![needle wired up](documentation/Needle_Oct23.jpg) 
 
 As suspected, capacitive sensor... didn't work. Or rather it did, but extremely weirdly? I was expecting it to fully not recieve any information and for the LED to remain either off or on entirely without changing... But instead it sort of flickered on and off unpredictably? We tried testing it with movement, with outside touch, staying still, etc, and there wasn't any sort of real predictive pattern to the thing... Which is very odd. But I learned this with my past plant synth project - working with bioelectric systems is actually wildly unpredictable because biological things do not function like computers at all! So... maybe this stays as a chaos element? 
 
+[![Capacitive Sensor](https://img.youtube.com/vi/UI5V-J441-M/hqdefault.jpg)](https://www.youtube.com/watch?v=UI5V-J441-M)
+
 Tilt sensor worked perfectly! I was wondering if needle being jostled in the skin would be too painful but either friend is an insane masochist (possible) or skin is an insane organ (seems likely) - he was showing me how you could turn the whole needle basically 90 degrees before it even started to become uncomfortable. So the little movements from the wire attatched to the needle weren't particularly noticable for him.
+
+[![Tilt Sensor](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=5Lc-ihQ6pE8)
+
 
 Something fun though - HE wanted to do more of the controlling of the sensors? I had the wires intentionally long so I would be able to connect without causing harm and explore - but he wanted to move his arm around and cause the sensor to activate. 
 
