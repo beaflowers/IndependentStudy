@@ -2,7 +2,7 @@
 
 Today, trying to test the limits of human skin as a resistor! built this needle circuit ladder - the LED glows a bit dimmer but it does appear that skin is not a very strong resistor at all, so that’s cool. Don’t need to worry about circuits in series being too depleted. 
 
-[![Needle Ladder](https://img.youtube.com/vi/UI5V-J441-M/hqdefault.jpg)](https://www.youtube.com/watch?v=gk9RYzOHAkM)
+[![Needle Ladder](https://img.youtube.com/vi/gk9RYzOHAkM/hqdefault.jpg)](https://www.youtube.com/watch?v=gk9RYzOHAkM)
 
 HOWEVER… issues of making sure everything stayed together did begin to arise when the leapfrogging length of the circuit increases. Every connection becomes a point where the circuit can break, and it does break fairly easily since wires can just slip off.
 
@@ -93,7 +93,7 @@ My concerns are that the level of tilt required would be way too painful?? I'm g
 
 Thought maybe let's try something more senstiive, so started building out something with the MPU6050 sensor, that has a gyroscope that senses position and acceleration... which would be cool to try and get more articulate information, and maybe have the LED set to light up with a lesser tilt, but... I can't hook this big ass chip to someone's skin??? At least I don't think so. And it's the whole chip that needs to be tilted. It'd look ugly - just a random circuitboard and 4 gangly wires going back to the Pico W... Cool to work/learn with a new sensor though. This would def work better embedded in something, so maybe we're going back to a clothing wearable....?
 
-[![MPU6050](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=40C-3Smhf5M)
+[![MPU6050](https://img.youtube.com/vi/40C-3Smhf5M/hqdefault.jpg)](https://www.youtube.com/watch?v=40C-3Smhf5M)
 
 I've been testing the needles sans-skin by sticking them in my pants and wiring up from there. I forgot I had one in there and stabbed myself a little bit, which... I dunno, good be interesting to incorporate that sort of bodily awareness/intentionality on purpose. Especially since then it wouldn't depend on getting someone over to stab with needles, which isn't like super inconvenient, but not something I can do entirely independently. 
 
@@ -105,7 +105,7 @@ Had to reference my own past work for the easiest way to get the MPR 121 sensor 
 
 Surprised/intrigued that needle still works when going through cloth. I mean I guess it's not that surprising, since cloth isn't a particularly strong resistor, but the fact that it can penetrate something and still work on either side is cool. Currently using cheap sewing needles rather than piercing needles but presumably the effect will be the same, but we're still in deep prototype mode. 
 
-[![Needl fabric](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=6EjsjSBt8ZI) [![Needle fabtric](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=0bpGS45YL4A)
+[![Needl fabric](https://img.youtube.com/vi/6EjsjSBt8ZI/hqdefault.jpg)](https://www.youtube.com/watch?v=6EjsjSBt8ZI) [![Needle fabtric](https://img.youtube.com/vi/0bpGS45YL4A/hqdefault.jpg)](https://www.youtube.com/watch?v=0bpGS45YL4A)
 
 I need to find someone else to either put a needle in me or let me put a needle in them to test the circuit, which feels tricky right now. I might be able to do this myself but that feels a bit precarious and like I'm doing too much - I don't want to be moving around a lot fixing circuitry if I'm also part of the circuit, that seems way too easy for something to fall apart. 
 
