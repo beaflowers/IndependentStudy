@@ -1,3 +1,31 @@
+<h2>November 6th - Ladders</h2>
+
+Today, trying to test the limits of human skin as a resistor! built this needle circuit ladder - the LED glows a bit dimmer but it does appear that skin is not a very strong resistor at all, so that’s cool. Don’t need to worry about circuits in series being too depleted. 
+
+[![Needle Ladder](https://img.youtube.com/vi/UI5V-J441-M/hqdefault.jpg)](https://www.youtube.com/watch?v=gk9RYzOHAkM)
+
+HOWEVER… issues of making sure everything stayed together did begin to arise when the leapfrogging length of the circuit increases. Every connection becomes a point where the circuit can break, and it does break fairly easily since wires can just slip off.
+
+So… need to come up with some better hooking mechanism (it can’t just be a tight spiral, which i originally had, bc things need to go on the needle between the cap and skin), I need to improve my skills so that i could insert a needle with a wire already attached (possible, actually? I should try? but that only solves half the problem), aaaaand ideally we need some kind of cap for the open end of the needle to keep the wires from sliding off. I was right in that skin has enough pull that the needles themselves don’t slip out like how they were doing on the mannequin, but wires are still falling off the ends which is not ideal. 
+
+Another thing we tested: built two halves a circuit each connected to a needle in each arm, and made R twist around to make the needles touch to complete the circuit and light up an LED. This was actually really cool and fun to watch, def a movement I want to incorporate into the final design. I didn’t document it which is annoying, but I'm sort of overwhelmed with keeping things sanitary while building this, and picking up a nasty phone mid scene feels daunting.. 
+
+R likes the asymmetry look of the model though. he keeps pushing me to add more things and i’m like look the issue is clearly not the painful needles in your body the limit is my capacity to manage the circuit lmao (am i topping the needle body AND the computer??) 
+
+<h3>Possible solutions:</h3> conductive thread? easy to wind around the needle for the ladder thing, though the ladder thing is purely aesthetic. But a good aesthetic.
+
+<h3>next steps:</h3>
+- testing other sensors, like reed switch, thermistor, and photoresistor
+<br>- getting better at piercing w my left hand, some body positions are awkward!
+<br>- figuring out caps….
+<br>- find longer needles?
+
+<h3>some weird things that came up:</h3> 
+- one of the needles i put in maybe wasnt deep enough, which made it more slidey?
+<br>- R moved around in such a way that a needle went back inside him and then went much deeper than intended - another thing that cap would potentially prevent. (he is fine, everything is fine! just slightly more blood than usual!)
+
+<br>i’m really so appreciative of my sweet smart friend for letting me hurt him so much it’s soooooo nice !
+
 <h2>November 5th 2025 - Fashion </h2>
 after weeks of trying to figure out how to get a dress form, a halloween miracle occured and one just SHOWED UP AT MY HOUSE. shoutout to T for bringing it as a decoration and letting me keep it for a while.
 
@@ -65,13 +93,19 @@ My concerns are that the level of tilt required would be way too painful?? I'm g
 
 Thought maybe let's try something more senstiive, so started building out something with the MPU6050 sensor, that has a gyroscope that senses position and acceleration... which would be cool to try and get more articulate information, and maybe have the LED set to light up with a lesser tilt, but... I can't hook this big ass chip to someone's skin??? At least I don't think so. And it's the whole chip that needs to be tilted. It'd look ugly - just a random circuitboard and 4 gangly wires going back to the Pico W... Cool to work/learn with a new sensor though. This would def work better embedded in something, so maybe we're going back to a clothing wearable....?
 
+[![MPU6050](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=40C-3Smhf5M)
+
 I've been testing the needles sans-skin by sticking them in my pants and wiring up from there. I forgot I had one in there and stabbed myself a little bit, which... I dunno, good be interesting to incorporate that sort of bodily awareness/intentionality on purpose. Especially since then it wouldn't depend on getting someone over to stab with needles, which isn't like super inconvenient, but not something I can do entirely independently. 
+
+![breadboard](documentation/Breadboard_Oct23.jpg)
 
 <h2>October 16th 2025 - Initialization</h2>
 
 Had to reference my own past work for the easiest way to get the MPR 121 sensor set up again properly, so that was nice. Haha. Also decided to work with Thonny rather than PyCharm, I have no idea why an old prof insisted on PyCharm, but it's so bulky and unnecessary for what I'm doing, Thonny has a built in very very simple terminal system and is so helpful. (Bidirectional framing coming in strong here.) 
 
 Surprised/intrigued that needle still works when going through cloth. I mean I guess it's not that surprising, since cloth isn't a particularly strong resistor, but the fact that it can penetrate something and still work on either side is cool. Currently using cheap sewing needles rather than piercing needles but presumably the effect will be the same, but we're still in deep prototype mode. 
+
+[![Needl fabric](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=6EjsjSBt8ZI) [![Needle fabtric](https://img.youtube.com/vi/5Lc-ihQ6pE8/hqdefault.jpg)](https://www.youtube.com/watch?v=0bpGS45YL4A)
 
 I need to find someone else to either put a needle in me or let me put a needle in them to test the circuit, which feels tricky right now. I might be able to do this myself but that feels a bit precarious and like I'm doing too much - I don't want to be moving around a lot fixing circuitry if I'm also part of the circuit, that seems way too easy for something to fall apart. 
 
