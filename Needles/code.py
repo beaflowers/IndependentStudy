@@ -42,7 +42,7 @@ BETA = 3950                 # Common thermistor beta value - describes how resis
 NOMINAL_RESISTANCE = 10000  # Thermistor resistance at 25°C
 NOMINAL_TEMP = 25           # 25°C baseline
 
-def calibrate(samples=20, delay=0.2):
+def calibrate(samples=10, delay=0.1):
     total = 0
     for _ in range(samples):
         total+= therm_sense()
@@ -79,17 +79,6 @@ threshold = 1.0
 #setup for photoresistor
 light_baseline = light.value
 light_threshold = 3000
-
-def photo_sense():
-    global light_threshold, light_baseline
-    light_test = light_baseline + light_threshold
-    if light.value > light_test:
-        light_led.value = True
-    else:
-        light_led.value = False
-        
-    print(f"Light level: {light.value}")
-    print(f"Light test: {light_test}")
 
 #setup LED
 touch_led = digitalio.DigitalInOut(board.GP16)
@@ -178,15 +167,25 @@ def use_therm():
 def motion():
     if motion_sense.value:
         print("Movement Detected")
+
+def photo_sense():
+    global light_threshold, light_baseline
+    light_test = light_baseline + light_threshold #changes if it gets darker
+    if light.value > light_test:
+        light_led.value = True
+    else:
+        light_led.value = False
         
+    print(f"Light level: {light.value}")
+    print(f"Light test: {light_test}")
     
 while True:
     #touched()
     #tilt()
     #tilt_sense()
-    #use_therm()
+    use_therm()
     photo_sense()
-    #motion()
+    motion()
     
     ledOn()
     time.sleep(0.5)
