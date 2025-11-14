@@ -28,6 +28,10 @@ last_touched = [False] * 12
 #track for tilt sensor
 last_state_tilt = False
 
+#track for temp sensor
+temp_change = False
+temp_time = 0
+
 #configure analog input pins
 therm = analogio.AnalogIn(board.GP28)
 light = analogio.AnalogIn(board.GP27)
@@ -72,15 +76,20 @@ print(f"Room baseline: {baseline:.2f}°C")
 last_temp = baseline
 threshold = 1.0
 
-light_threshold = 40000
+#setup for photoresistor
+light_baseline = light.value
+light_threshold = 3000
 
 def photo_sense():
-    if light.value > light_threshold:
+    global light_threshold, light_baseline
+    light_test = light_baseline + light_threshold
+    if light.value > light_test:
         light_led.value = True
     else:
         light_led.value = False
         
     print(f"Light level: {light.value}")
+    print(f"Light test: {light_test}")
 
 #setup LED
 touch_led = digitalio.DigitalInOut(board.GP16)
@@ -113,7 +122,8 @@ def touched():
 def ledOn():
     #touch_led.value = touch_pad[11].value
     #tilt_led.value = not tilt_switch.value
-    reed_led.value = 0;
+    temp_led.value = temp_change
+    mo_led.value = motion_sense.value
     
 def tilt():
     global last_state_tilt
@@ -149,25 +159,25 @@ def tilt_sense():
 
 
 def use_therm():
-    global baseline, last_temp
+    global baseline, temp_change, temp_time
     temp = therm_sense()
-    threshold = 0.5
+    threshold = 2
     
-    #detect change in temp
-    if abs(temp - baseline) > threshold:
-        temp_led.value = True;
-    else:
-       temp_led.value = False;
-    
+    #detect change in temp and trigger if not already changed
+    if not temp_change and abs(temp - baseline) > threshold:
+        temp_change = True;
+        temp_time = time.monotonic() #record time
+        print(temp_change)
+        
+    #reset after 2 seconds
+    if temp_change and time.monotonic() - temp_time > 2:
+        temp_change = False;
        
     print(f"Temp: {temp:.2f}°C")
  
 def motion():
     if motion_sense.value:
-        print("Movement")
-        mo_led.value = True
-    else:
-        mo_led.value = False
+        print("Movement Detected")
         
     
 while True:
@@ -175,8 +185,8 @@ while True:
     #tilt()
     #tilt_sense()
     #use_therm()
-    #photo_sense()
-    motion()
+    photo_sense()
+    #motion()
     
-    #ledOn()
+    ledOn()
     time.sleep(0.5)
