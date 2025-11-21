@@ -1,3 +1,14 @@
+<h2>November 21st - Futuring</h2>
+Realizing that with pi worn on the back (or even just in a belt) there's no feedback to wearer whatsoever, which is literally the main purpose of a controller, arguably - to create a sensation of agency and control over another realm.
+
+The "final" idea is for it to be connected to a game on a screen - in iterim, could add lights to arcing wires? Maybe that's annoying, with it being directly in the circuit? I ended up getting a 15 foot USB cable that's gonna be like a freaky umbilical cord to the computer. Assuming there will be some tweaks that will need to happen after that - we've so far only done tests with the sensors along the arm, not in their final placements on shoulders. But it's honestly feeling very close to being "done" in a stage I'm happy with for this semester.
+
+Thinking about documentation of the project, also... I want it to look cool/pretty/sexy/scifi... And historically my documentation efforts have sucked, which I want to change. I can't do any of this documenting at Concordia's spaces because it's a blood risk (and also it's... I mean it's not porn, but it's not NOT porn. It's not NOT sex. And doing that where some rando student could just walk in feels unsafe/awkward!)
+
+Big Future Thoughts: Talking with V last night about what the actual game component for this could be - because I don't want to create a game that's antagonistic/or difficult - if someone is using the controller as THEIR BODY, making something challenging could ultimately lead to bad/frustrating feelings about one's own body, which is very much NOT what I would want. She suggested some sort of arts program or something where there is input that creates something, which is a really cool idea!! (Still far off from this being a thing, and maybe that invites motion tracking in some way???) But feels like a helpful lens to start peeking through.
+
+Putting together the full body human prototype with needles in a few days, looking forward to it. 
+
 <h2>November 14th - Prototyping</h2>
 
 ![shoulder](documentation//body_prototype_nov14_2.jpg) ![arm loops](documentation/body_prototype_nov14.jpg) ![forearms](documentation/body_prototype_nov14_3.jpg)
