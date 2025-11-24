@@ -1,3 +1,39 @@
+<h2>November 21st - Futuring</h2>
+Realizing that with pi worn on the back (or even just in a belt) there's no feedback to wearer whatsoever, which is literally the main purpose of a controller, arguably - to create a sensation of agency and control over another realm.
+
+The "final" idea is for it to be connected to a game on a screen - in iterim, could add lights to arcing wires? Maybe that's annoying, with it being directly in the circuit? I ended up getting a 15 foot USB cable that's gonna be like a freaky umbilical cord to the computer. Assuming there will be some tweaks that will need to happen after that - we've so far only done tests with the sensors along the arm, not in their final placements on shoulders. But it's honestly feeling very close to being "done" in a stage I'm happy with for this semester.
+
+Thinking about documentation of the project, also... I want it to look cool/pretty/sexy/scifi... And historically my documentation efforts have sucked, which I want to change. I can't do any of this documenting at Concordia's spaces because it's a blood risk (and also it's... I mean it's not porn, but it's not NOT porn. It's not NOT sex. And doing that where some rando student could just walk in feels unsafe/awkward!)
+
+Big Future Thoughts: Talking with V last night about what the actual game component for this could be - because I don't want to create a game that's antagonistic/or difficult - if someone is using the controller as THEIR BODY, making something challenging could ultimately lead to bad/frustrating feelings about one's own body, which is very much NOT what I would want. She suggested some sort of arts program or something where there is input that creates something, which is a really cool idea!! (Still far off from this being a thing, and maybe that invites motion tracking in some way???) But feels like a helpful lens to start peeking through.
+
+Putting together the full body human prototype with needles in a few days, looking forward to it. 
+
+<h2>November 14th - Prototyping</h2>
+
+![shoulder](documentation//body_prototype_nov14_2.jpg) ![arm loops](documentation/body_prototype_nov14.jpg) ![forearms](documentation/body_prototype_nov14_3.jpg)
+
+prototype for wearable! with tape! because we didn't have time to do the whole rigamarole for needles today but i wanted to start measuring wirelengths to see what we're working with here. focusing on 3 interactions to start: tilt sensor, photoresistor (currently programmed just to respond when light is blocked/dimmed, but since it's an analog sensor has potential for more responses), and touch/complete circuit connection (putting forearms together). it's wild to me that this amount of wires is potentially only 3 interactions. it looks so simple but i've worked so hard to get this far T_T potentially want to add more tilt sensors on the arms, but focusing on these three first. 
+
+so many sensors I originally thought could be incorporated won't work - thermistor (see commit messages for my sadness), capacative sensor, motion sensor, gyroscope sensor... I think there were more but maybe not? Stupid thermistor is not going to be involved, even though it worked with breath, which was interesting... but the resistor itself takes FOREVER to reset back to room temperature, which makes it very difficult to incorporate, since you can trigger it once and then it's just kind of... useless, and weird and flickery in its response. it's possible someone with more experience than me could get it working better, but i'm already over my head w the physics equations it takes to get this thing to give me results in kelvin/celsius, much less trying to make it work reliably with input.
+
+movements will be: tilting torso, changing light (either with hand, or by tilting body down away from lights), and connecting needles on forearms to complete a circuit. unsure what games can be played with three controls, two of which are on/off only.... trying to think of simple/binary interactions, like "open", but that's getting ahead of ourselves.
+
+tilt sensor and photoresistor are going to go on chest, soldered in a short piece of wire that'll be like a ladder between two needles that we tested the other day. so they'll be close to the body, and not adding weight to the aesthetic components. 
+
+I'm obsessed w how the wires look moving around from attatchment in the back to the forearms, it's so cool??? it looks kinda simple and small in the pictures, but the movement of those wires feel the most deeply cyborg/computer bondagey.
+
+i'm buying a runner's belt bag thingy and going to tuck the pi and power source in that, wrapped around the middle of the torso.... still not entirely sold on that idea, since i like the idea of making R hold the pi, and watch for it's positive response in terms of lights... but the lights were actually just for me prototyping, not necessarily part of the project. it'd be cool to incorporate some LEDS in the wearable though, maybe on the arms or something. and with it's current design it makes sense for the wires to "end" in the back.
+
+possibly not going to need to attach any circuits to needles in the back, but will put in needles to pin the wires in place aesthetically. (8 needles total, i think? that's actually a very small number...) 
+
+testing this with needles i'm sure is going to be a bucket of a thousand problems. trying to schedule w R for a day when we don't have to run to something afterwards. 
+
+<h3>things to think about:</h3>
+another thing i'm sort of too overwhelemed to think about is the "hooking" mechanism on the needle itself. it's possible i'll need to put in another needle going perpendicular to the circuit needle in order to hold the wire in place on the needle. cuz currently bending a hook in the wire and just looping that around doesn't feel reliable enough, especially not with this much movement. a friend suggested looking on fetlife for examples.
+
+<br>controller dynamics - R wants to be the controller and do the controlling. Thinking about inviting V and C over because that could be a different dynamic - where V wants to be the controller and C could do the controlling... at this point /I/ want nothing to do with the using of this device. Setting it up is more than enough play/work. 
+
 <h2>November 6th - Ladders</h2>
 
 Today, trying to test the limits of human skin as a resistor! built this needle circuit ladder - the LED glows a bit dimmer but it does appear that skin is not a very strong resistor at all, so that’s cool. Don’t need to worry about circuits in series being too depleted. 
