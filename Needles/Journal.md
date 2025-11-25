@@ -1,3 +1,27 @@
+<h2>November 24th - Failure</h2>
+Spent yesterday morning editing code and soldering components to fit the body shape I had previously designed - two needles on each side of the chest each connected by a wire with a sensor soldered in the middle. Very short, only an inch or two long, spirals on the ends that slide over the outer sharp edge of the needle. (I didn't get photos because of the way things ended up, documentation stopped being my priority...) Got everything working correctly with code and circuits, all tests went smooth. [I can't remember if I said which ones we were gonna keep? Photoresistor, tilt sensor, and needle touch circuit complete are the ones I opted to build with initially.] Bought a 15ft USB cord to hook up to laptop, not for power supply, but to track feedback from the controller (so user can actually see a response - breadboard/pico/lights are in a runner's fanny pack around the torso.)
+
+![breadboard](documentation/Breadboard_Nov23.jpg) [Blue circles mark where input/output of sensor wires go.]
+
+Hooking up the whole system was at first troublesome in ways that I expected - I couldn't get needles in at the right angle on the first try, things kept slipping off/sliding around, stuff I figured I would have to troubleshoot. The real issue came once we did correctly get multiple sensors hooked up.
+
+R complained of a weird pinching sensation - I stopped to check, trimmed some wires that I thought were poking him unnecessarily.... We'd continue. Eventually he said "it feels like it's burning" and that triggered alarm bells in my head because of issues with circuitry - I immediately detached the circuit, pulled out a needle, and the wound was fully black/cauterized inside... I was VERY confused, double checked to make sure I had everything plugged into the board correctly, which it was. I opted to stop working with this sensor/side entirely (the photoresistor side), thinking it was something with the breadboard or something... Moved down to the arm needles for the touch part, and as soon as THOSE were connected with power in, R said he felt burning again! So I took everything out - clearly there was some bigger issue, and I wasn't going to keep testing it with this type of injury as the risk. 
+
+Tested everything again, with the wires we were using and everything - did the alcohol I was using to sterilize cause a short circuit on the breadboard or something? But no, everything functioned properly, nothing was heating up or acting strange... I showed R what a short circuit was by hooking up multiple sensors to the same needle, and it obviously got hot and I stopped it right away. I'm guessing??? that it turns out that human skin isn't a resistor at all, like everything I had tested for - it's actually a CONDUCTOR. So putting voltage in from multiple sensors was causing a short circuit within R's body!! Causing the metal of the needles to get hot/burn him. 
+
+So... this halted everything, haha. The original plans for the project are a total failure - can't have multiple sensors wired into the body separately, because it just causes a short circuit. Having everything wired in series with only one power in/ground out would mean all the sensors would respond at the same time no matter what, so it would mean only one input, so what's the point. I certainly learned a lot with this one day of testing! My technical knowledge was sound but my biological knowledge was deeply lacking here. 
+
+Don't really want to continue navigating or testing this knowing these types of wounds are a risk - this is not something I had intended, and I felt quite awful having done that to R. Cuddled him and fed him soup and gummies, but kinda spiraled after he left. Felt like a big failure in my responsibilities - though not through something I even knew I had to prepare for. Texted him later that night after pulling myself back and got a very sweet response that I actually think is very important to this project!
+
+![text](documentation/R_Text.PNG)
+
+<h3>Next Steps</h3>
+For the sake of wrapping this project up - going to figure out some way to hold sensors on the chest w needles that is external/purely aesthetic, and have only the arm touch one have current running into the body.
+
+Will have to wait for R's body to heal, though. Will do some modeling on the mannequin and photograph that, possibly all I'll be able to do in time to write the final project write up before the end of the semester. 
+
+A fun thing - want to tweak photoresistor to also have a trigger when it gets exceptionally brighter, so there's two success states for it.
+
 <h2>November 21st - Futuring</h2>
 Realizing that with pi worn on the back (or even just in a belt) there's no feedback to wearer whatsoever, which is literally the main purpose of a controller, arguably - to create a sensation of agency and control over another realm.
 
