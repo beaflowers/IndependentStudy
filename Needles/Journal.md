@@ -1,3 +1,28 @@
+<h2>November 27th - Redesign</h2>
+
+Okay. So.
+
+![mannequin](documentation/needle_redesign_front.jpg) ![mannequin](documentation/needle_redesign_back.jpg)
+
+Hear me out - no more shorting circuits, the two chest sensors are held in place by the needles but no electricity enters body here. Only place with voltage in would be the arm needle touch one. This weaving method actually seems to hold things in place pretty ok, much better than the setup I had before, where things were slipping off constantly. (Thinking about “communication w materials”.. I sure am learning a lot about needle physics?) it’s maybe even….. better……… Concern here is that lifting needle with the wire might cause it to re-enter the body but I'm maybe good enough now with needles that I could weave in and out of the skin twice to further solidify its position. (None of this will be tested until R is healaed!!)
+
+Both R and Rilla questioned whether using the body/this was still aligned with my design goals - and I think it is, but maybe I'm being stubborn/stupid. It's not ideal, but it still translates to “body is the controller” / pain as an embodied mechanism. Have to pay close attention to what you/the controller is doing and how. The fact that the body isn't a circuitboard shows the limits of the materials at hand, and there is still one electrical component.
+
+I mean yeah it COULD just be a clothing wearable at this point. And the only reason it’s not is because I find that boring! and the fact that I don’t find this boring suggests that it’s still aligned w whatever it is I'm doing I guess. I think it compares to playing a game itself - anyone can put on a piece of clothing, but not anyone can use this controller - it requires an active participation and endurance, similar to playing a game - it can’t just be passively consumed to success, you have to interact with it and struggle with it;  it involves active attention.
+
+Also, this has a name now: [Skin Effect](https://en.wikipedia.org/wiki/Skin_effect). "In electromagnetism, skin effect is the tendency of an alternating electric current (AC) to become distributed within a conductor such that the current density is largest near the surface of the conductor and decreases exponentially with greater depths in the conductor." It came up when I was researching stuff about the short circuit - which is more or less what happened, I think. :)
+
+I haven't shown any pics of my "setup" while testing this - because it's sort of maddening - basically a bunch of overturned boxes in my room, lol. You too can be a DIY electroblood maniac, kids! 
+
+![room](documentation/room.jpg)
+
+<h3>Further Ideation</h3>
+I found ONE GUY doing electro needle stuff on the horrible kink website. He had this sick setup w alligator clips (jfc, OBVIOUSLY, why didn't I think of that) and is using a TENs unit that has channels to control on/off. WHICH, I could TOTALLY replicate with potentiometers - so that only one circuit is recieving voltage at once. Still a risk of burns if used incorrectly (unless there's a way to shut it down entirely if it detects multiple active voltages?) and would require a whole other interface... And I personally wouldn't trust someone w needles in them to have the clarity of thought to be operating that correctly, so would become and only two person experience (which is fine/maybe cool?). Am I doing this? arguably not. I'm excited to move on to something else right now.
+
+![example](documentation/electronautZA_example.png)
+
+
+
 <h2>November 24th - Failure</h2>
 Spent yesterday morning editing code and soldering components to fit the body shape I had previously designed - two needles on each side of the chest each connected by a wire with a sensor soldered in the middle. Very short, only an inch or two long, spirals on the ends that slide over the outer sharp edge of the needle. (I didn't get photos because of the way things ended up, documentation stopped being my priority...) Got everything working correctly with code and circuits, all tests went smooth. [I can't remember if I said which ones we were gonna keep? Photoresistor, tilt sensor, and needle touch circuit complete are the ones I opted to build with initially.] Bought a 15ft USB cord to hook up to laptop, not for power supply, but to track feedback from the controller (so user can actually see a response - breadboard/pico/lights are in a runner's fanny pack around the torso.)
 
