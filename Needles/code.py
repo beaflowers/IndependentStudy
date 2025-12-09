@@ -58,11 +58,10 @@ def photo_sense():
     light_test = light_baseline + light_threshold #changes if it gets darker
     if light.value > light_test:
         light_led.value = True
+        print("Light triggered")
     else:
         light_led.value = False
         
-    print(f"Light level: {light.value}")
-    
 def read_touch():
     if touch.value == False: #means it is touched -> pulled to ground
         print("Touched")
