@@ -1,3 +1,40 @@
+<h2>December 9th - Final Prototype Documentation</h2>
+No changes - just setting the prototype up on a mannequin. R's chest still healing, and I think there's some key failures in this project that prevent it from being truly "wearable" as a a moving body controller.
+
+![](documentation/fullfront_prototypefinal.jpg) ![](documentation/fullback_prototypefinal.jpg)
+
+Full body design - minus arm attatchments, because mannequin doesn't have arms. Needles to be inserted into forearms. 
+
+![](documentation/front_tilt_prototypefinal.jpg)![](documentation/back2_closeup_prototype.jpg) 
+
+Front and back of tilt sensor placement. Gif of it... moving? 
+
+![](documentation/tiltgif.gif)
+
+![](documentation/front_photo_prototypefinal.jpg) ![](documentation/back_closeup_prototypefinal.jpg)
+
+Front and back of photosensor placement.
+
+![](documentation/photogif.gif)
+
+Gif of photosensor being triggered. (Future ideas include holding a light as well, so it reacts to brightness.)
+
+![](documentation/needletouchgif.gif) Needle touch... Doesn't really make sense without it being in a body? But completes a circuit that inputs to raspberry pi. (When circuit is connected, pulldown is changed to LOW, preventing a short circuit from pi pin.)
+
+![](documentation/output(1).gif) Outputs triggering change in program. Tried to record both at once to show direct reactivity but that was really hard?? But trust me it does work accurately! 
+
+![](documentation/umbilicalcordgif.gif) Long 15 foot umbilical cord going from raspberry pi holster to laptop in order to read input. Long to allow for human movement but still connected to read data from sensors. 
+
+<h3>Issues</h3>
+
+- Unsure of wire placement stability. When wiggling wires to put into raspberry pi, things are constantly popping out of a place. Once everything is plugged in, it remains stable on the mannequin - but the human body moves a lot more than a mannequin... This is a huge issue, and that makes me feel very defeated about this project - the most interesting thing about it, that it is placed in skin, is also it's weakest design element because it just might not be usable? Need a different way to firm up positioning. If it was a clothing wearble, could be sewn into place... I guess there's a more extreme version of needle play here that would involve suturing?? Or some other reinvisioning element.
+
+- Unsure if movement is safe - needles slipping out and back into the body is not ideal. Obviously these needles are injection needles so insertion in the body is technically what they're made for, they're not meant to "stay" in the body, especially at depth. 
+
+- Unsure if this is a failure, I think would depend on the "game" it is used to play - but photoresistor is often triggered in similar circumstances as the tilt. Ie, if someone bends forward, then that blocks light from an overhead light, making the photoresistor trigger activate. This could be changed by alternative lighting, or maybe it needs different logic for the photoresistor. How the controller gets used remains... a mystery. 
+
+That's all for now I think. I'm still intriguied by this idea and infusing technology into the biological body, but I think there's gotta be a bigger shift somewhere.
+
 <h2>November 27th - Redesign</h2>
 
 Okay. So.
