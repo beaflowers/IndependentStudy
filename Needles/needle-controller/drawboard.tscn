@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://2j1je5uo0h3c"]
+
+[ext_resource type="Script" uid="uid://cxin75r03xc8i" path="res://Draw.gd" id="1_tvs5i"]
+
+[node name="Node2D" type="Node2D" unique_id=2012765282]
+script = ExtResource("1_tvs5i")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1722517807]
