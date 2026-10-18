@@ -3,6 +3,8 @@ extends Node2D
 @onready var _lines: Node2D = $Line2D
 
 const GRAVITY = 1500.0
+const FALL_LENGTH = 300.0 #pieces shorter than this will fall
+
 var ERASE_RADIUS = 16
 var _erase_origin: Vector2
 var _erase_armed: bool = false
@@ -13,6 +15,12 @@ var _falling: Array[Line2D] = []
 func _ready() -> void:
 	_new_line()
 	
+func _piece_length(pts: PackedVector2Array) -> float:
+	var total := 0.0
+	for i in range(pts.size() - 1):
+		total += pts[i].distance_to(pts[i+1])
+	return total
+
 func _new_line() -> void:	
 	_current_line = Line2D.new()
 	_current_line.width = 24
@@ -70,9 +78,11 @@ func _erase_at(pos: Vector2) -> void:
 			new_line.end_cap_mode = Line2D.LINE_CAP_ROUND
 			new_line.joint_mode = Line2D.LINE_JOINT_ROUND
 			new_line.points = piece
-			new_line.set_meta("velocity", Vector2.ZERO)
 			_lines.add_child(new_line)
-			_falling.append(new_line)
+			
+			if _piece_length(piece) < FALL_LENGTH:
+				new_line.set_meta("velocity", Vector2.ZERO)
+				_falling.append(new_line)
 			
 		line.queue_free()
 				
@@ -88,7 +98,7 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if _erase:
 			if not _erase_armed and event.position.distance_to(_erase_origin) > ERASE_RADIUS * 2.0:
-				_erase_armed = true          # only ever turns on here
+				_erase_armed = true          # erase turns on when double size of erase radius away from click position
 			if _erase_armed:
 				_erase_at(event.position)
 		else:
